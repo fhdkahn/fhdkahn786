@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  
+
   <!-- Link directly to the CSS file in the root folder -->
   <link rel="stylesheet" href="8a44ecf37acfd20f.css" data-precedence="next" />
 
@@ -37,24 +37,14 @@
             <div></div>
           </div>
         </div>
-        <form class="flex flex-col gap-2 items-center sm:items-start justify-center sm:justify-start border border-slate-700 p-4 rounded-2xl">
+        <!-- Updated form using Getform endpoint -->
+        <form action="https://getform.io/f/ajjmmjga" method="POST" class="flex flex-col gap-2 items-center sm:items-start justify-center sm:justify-start border border-slate-700 p-4 rounded-2xl">
           <h3 class="text-slate-300 text-2xl uppercase font-semibold border-b-2 mb-4 border-slate-600">
             Not Sure? We can help you find the right AI & Automation. Get in touch
           </h3>
-          <input class="bg-slate-800 rounded-xl py-2 px-4 text-slate-200 w-4/5 sm:w-full focus:outline-purple-800" type="text" placeholder="Your name" required />
-          <input class="bg-slate-800 rounded-xl py-2 px-4 text-slate-200 w-4/5 sm:w-full focus:outline-purple-800" type="email" placeholder="Your email" required />
-          <textarea rows="5" placeholder="Tell us about your automation requirements.." class="bg-slate-800 rounded-xl focus:outline-purple-800 py-2 px-4 text-slate-200 w-4/5 sm:w-full" required></textarea>
-          <button type="submit" class="bg-gradient-to-r from-purple-600 to-blue-600 bg-purple-600 text-white uppercase text-sm px-4 py-2 rounded-md hover:opacity-80 sm:self-start transition-all">
-            Send
-          </button>
-        </form>
-      </div>
-    </div>
-  </main>
-
-  <footer class="container mx-auto max-w-4xl flex items-center justify-center py-8 px-8 text-white">
-    <p class="text-xs text-slate-300">Copyright © 2025 | fhdkahn.ai</p>
-  </footer>
-</body>
-
-</html>
+          <input type="text" name="name" class="bg-slate-800 rounded-xl py-2 px-4 text-slate-200 w-4/5 sm:w-full focus:outline-purple-800" placeholder="Your name" required />
+          <input type="email" name="email" class="bg-slate-800 rounded-xl py-2 px-4 text-slate-200 w-4/5 sm:w-full focus:outline-purple-800" placeholder="Your email" required />
+          <textarea name="message" rows="5" class="bg-slate-800 rounded-xl focus:outline-purple-800 py-2 px-4 text-slate-200 w-4/5 sm:w-full" placeholder="Tell us about your automation requirements.." required></textarea>
+          <!-- Hidden honeypot field for spam prevention -->
+          <input type="hidden" name="_gotcha" style="display:none !important">
+          <button typ
